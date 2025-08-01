@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Ashraf Hossain Khan</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon_io/site.webmanifest">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Ashraf Hossain Khan
+  * Updated: July 29 2025 with Bootstrap v5.3.3
+  * Author: Ashraf Khan
+  ======================================================== -->
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/688957a25ea1d819237c7793/1j1c7skrm';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+  <!--End of Tawk.to Script-->
+
+  <!--Include EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("fC0rzly6ay4JSn8wN"); 
+    })();
+  </script>
+  <script>
+    const form = document.getElementById('contact-form');
+    const loading = form.querySelector('.loading');
+    const success = form.querySelector('.sent-message');
+    const errorMsg = form.querySelector('.error-message');
+  
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+  
+      loading.style.display = 'block';
+      success.style.display = 'none';
+      errorMsg.textContent = '';
+  
+      emailjs.sendForm('service_bifkt8s', 'template_x02icgg', this)
+        .then(function(response) {
+          loading.style.display = 'none';
+          success.style.display = 'block';
+          form.reset();
+        }, function(error) {
+          loading.style.display = 'none';
+          errorMsg.textContent = 'Failed to send message. Please try again.';
+        });
+    });
+  </script>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/khan_ashraf.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <!-- <h3 class="sitename">Ashraf Hossain Khan</h3> -->
+      <h5>Ashraf Hossain Khan</h5>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://www.facebook.com/ashrafkhan.abir" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/ashrafkhanabir/" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://github.com/abir8" class="google-plus"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/ashraf-hossain-khan-89703b143/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <!-- <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li> -->
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+        <!-- <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#">Dropdown 1</a></li>
+            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Deep Dropdown 1</a></li>
+                <li><a href="#">Deep Dropdown 2</a></li>
+                <li><a href="#">Deep Dropdown 3</a></li>
+                <li><a href="#">Deep Dropdown 4</a></li>
+                <li><a href="#">Deep Dropdown 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Dropdown 2</a></li>
+            <li><a href="#">Dropdown 3</a></li>
+            <li><a href="#">Dropdown 4</a></li>
+          </ul>
+        </li> -->
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/ai.gif" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Ashraf Hossain Khan</h2>
+        <p>I'm a <span class="typed" data-typed-items="Software Engineer, DevOps Engineer, Data Engineer, Freelancer"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>  
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p class="text-justify">
+          I have over 8 years of experience in the IT industry, specializing in software development, project leadership, and data-driven solutions. Strong foundation in Computer Science and Data Science, with a proven track record in high-demand 24/7 environments across fintech, telecom, logistics, and enterprise systems. Skilled in full SDLC, cross-functional team collaboration, and effective technical communication. Skilled at solving complex challenges under pressure and building secure, scalable applications. Passionate about AI, machine learning, and cloud-native technologies. Committed to delivering impactful solutions that enhance business performance and customer satisfaction.
+          I currently hold a Continuous A Residence Permit in Finland with full work rights.
+        </p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Software, Cloud &amp; Data Engineer Enthusiast</h2>
+            <p class="fst-italic py-3">
+              Experience in designing, developing, and deploying scalable software solutions, automating infrastructure, and building secure data pipelines for enterprise systems.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-envelope"></i> <strong> Email:</strong> <span>engr.ashrafkhan01@gmail.com</span></li>
+                  <li><i class="bi bi-telephone"></i> <strong> Phone:</strong> <span>+358 413641031</span></li>
+                  <li>
+                    <i class="bi bi-linkedin"></i>
+                    <strong> LinkedIn:</strong>
+                    <a href="https://www.linkedin.com/in/ashraf-hossain-khan-89703b143/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-mortarboard"></i> <strong> Degree:</strong> <span>Master</span></li>
+                  <li><i class="bi bi-briefcase"></i> <strong> Freelance:</strong> <span>Available</span></li>
+                  <li><i class="bi bi-geo-alt"></i> <strong> City:</strong> <span>Helsinki, Finland</span></li>
+                </ul>
+              </div>
+            </div>            
+            <p class="py-3">
+              I hold a Master’s degree in Information Technology – Networking Services from Metropolia University of Applied Sciences, Finland, with a focus on advanced Networking, Machine Learning, IOT and AI-driven automation.
+              My multidisciplinary background enables me to bridge the gap between software development, system operations, and data engineering to deliver resilient, efficient, and secure digital systems.
+            </p>
+            <!-- Hire Me and Download CV Buttons -->
+            <div class="d-flex flex-wrap gap-3 mt-4">
+            <!-- Hire Me Button -->
+            <a href="#contact" class="btn btn-primary d-flex align-items-center">
+              <i class="bi bi-envelope-fill me-2"></i>
+              Hire Me
+            </a>
+
+            <!-- Download CV Button -->
+            <a href="assets/Ashraf_Hossain_Khan_CV.pdf" class="btn btn-outline-secondary d-flex align-items-center" download target="_blank">
+              <i class="bi bi-download me-2"></i>
+              Download CV
+            </a>
+      </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="60" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong> <br><span>Banks & Financial Organizations</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="40" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong> <br><span>Fintech, Telecom, Logistics and Enterprise Solutions</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="247" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hours Of Support</strong> <span>24/7 Support</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Telecommunication</strong> <span>Value-Added Services (VAS) Provided</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Technical Skills</h2>
+        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+          <!-- First Column -->
+          <div class="col-lg-6">
+            <!-- Core Programming Languages -->
+            <div class="progress mb-3">
+              <span class="skill d-flex align-items-center">
+                <img src="assets/img/skills/php.png" alt="PHP" width="35" class="me-2"> PHP
+                <i class="val ms-auto">100%</i>
+              </span>
+              <div class="progress-bar-wrap mt-1">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress mb-3">
+              <span class="skill d-flex align-items-center">
+                <img src="assets/img/skills/python.png" alt="Python" width="35" class="me-2"> Python
+                <i class="val ms-auto">90%</i>
+              </span>
+              <div class="progress-bar-wrap mt-1">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress mb-3">
+              <span class="skill d-flex align-items-center">
+                <img src="assets/img/skills/javascript.png" alt="JavaScript" width="35" class="me-2"> JavaScript
+                <i class="val ms-auto">90%</i>
+              </span>
+              <div class="progress-bar-wrap mt-1">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+        
+            <!-- Frameworks and Libraries -->
+            <div class="progress mb-3">
+              <span class="skill d-flex align-items-center">
+                <img src="assets/img/skills/laravel.png" alt="Laravel" width="35" class="me-2"> Laravel
+                <i class="val ms-auto">100%</i>
+              </span>
+              <div class="progress-bar-wrap mt-1">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress mb-3">
+              <span class="skill d-flex align-items-center">
+                <img src="assets/img/skills/flask.png" alt="Flask" width="35" class="me-2"> Flask
+                <i class="val ms-auto">85%</i>
+              </span>
+              <div class="progress-bar-wrap mt-1">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress mb-3">
+              <span class="skill d-flex align-items-center">
+                <img src="assets/img/skills/fastapi.png" alt="FastAPI" width="35" class="me-2"> FastAPI
+                <i class="val ms-auto">85%</i>
+              </span>
+              <div class="progress-bar-wrap mt-1">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress mb-3">
+              <span class="skill d-flex align-items-center">
+                <img src="assets/img/skills/nodejs.png" alt="Node.js" width="35" class="me-2"> Node.js
+                <i class="val ms-auto">75%</i>
+              </span>
+              <div class="progress-bar-wrap mt-1">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress mb-3">
+              <span class="skill d-flex align-items-center">
+                <img src="assets/img/skills/express.png" alt="Express.js" width="35" class="me-2"> Express.js
+                <i class="val ms-auto">85%</i>
+              </span>
+              <div class="progress-bar-wrap mt-1">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+        
+            <!-- Frontend Frameworks -->
+            <div class="progress mb-3">
+              <span class="skill d-flex align-items-center">
+                <img src="assets/img/skills/react.png" alt="React.js" width="35" class="me-2"> React.js
+                <i class="val ms-auto">80%</i>
+              </span>
+              <div class="progress-bar-wrap mt-1">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress mb-3">
+              <span class="skill d-flex align-items-center">
+                <img src="assets/img/skills/vuejs.png" alt="Vue.js" width="35" class="me-2"> Vue.js
+                <i class="val ms-auto">80%</i>
+              </span>
+              <div class="progress-bar-wrap mt-1">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress mb-3">
+              <span class="skill d-flex align-items-center">
+                <img src="assets/img/skills/tailwindcss.png" alt="Tailwind CSS" width="35" class="me-2"> Tailwind CSS
+                <i class="val ms-auto">85%</i>
+              </span>
+              <div class="progress-bar-wrap mt-1">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+        
+            <div class="progress mb-3">
+              <span class="skill d-flex align-items-center">
+                <img src="assets/img/skills/bootstrap.png" alt="Bootstrap" width="35" class="me-2"> Bootstrap
+                <i class="val ms-auto">95%</i>
+              </span>
+              <div class="progress-bar-wrap mt-1">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Second Column -->
+          <div class="col-lg-6">
+            <!-- Databases -->
+            <div class="progress mb-3">
+              <span class="skill d-flex align-items-center">
+                <img src="assets/img/skills/mysql.png" alt="MySQL" width="35" class="me-2"> MySQL
+                <i class="val ms-auto">95%</i>
+              </span>
+              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="progress mb-3">
+              <span class="skill d-flex align-items-center">
+                <img src="assets/img/skills/mongodb.png" alt="MongoDB" width="35" class="me-2"> MongoDB
+                <i class="val ms-auto">85%</i>
+              </span>
+              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="progress mb-3">
+              <span class="skill d-flex align-items-center">
+                <img src="assets/img/skills/redis.png" alt="Redis" width="35" class="me-2"> Redis
+                <i class="val ms-auto">80%</i>
+              </span>
+              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="progress mb-3">
+              <span class="skill d-flex align-items-center">
+                <img src="assets/img/skills/elasticsearch.png" alt="Elasticsearch" width="35" class="me-2"> Elasticsearch
+                <i class="val ms-auto">80%</i>
+              </span>
+              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        
+            <!-- DevOps, Cloud & Tools -->
+            <div class="progress mb-3">
+              <span class="skill d-flex align-items-center">
+                <img src="assets/img/skills/linux.png" alt="Linux" width="35" class="me-2"> Linux Server
+                <i class="val ms-auto">90%</i>
+              </span>
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="progress mb-3">
+              <span class="skill d-flex align-items-center">
+                <img src="assets/img/skills/aws.png" alt="AWS" width="35" class="me‑2"> &nbsp; AWS (S3, EC2, Serverless…)
+                <i class="val ms-auto">90%</i>
+              </span>
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="progress mb-3">
+              <span class="skill d-flex align-items-center">
+                <img src="assets/img/skills/docker.png" alt="Docker" width="35" class="me‑2"> Docker & CI/CD
+                <i class="val ms-auto">80%</i>
+              </span>
+              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="progress mb-3">
+              <span class="skill d-flex align-items-center">
+                <img src="assets/img/skills/apachekafka.png" alt="Kafka" width="35" class="me‑2"> Apache Kafka
+                <i class="val ms-auto">75%</i>
+              </span>
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        
+            <!-- Methodologies & Productivity -->
+            <div class="progress mb-3">
+              <span class="skill d-flex align-items-center">
+                <img src="assets/img/skills/git.png" alt="Git" width="35" class="me‑2">  &nbsp; Git, GitHub, Bitbucket
+                <i class="val ms-auto">95%</i>
+              </span>
+              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="progress mb-3">
+              <span class="skill d-flex align-items-center">
+                <img src="assets/img/skills/jira.png" alt="Jira" width="35" class="me‑2">  &nbsp; Jira, Agile & Scrum
+                <i class="val ms-auto">95%</i>
+              </span>
+              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="progress mb-3">
+              <span class="skill d-flex align-items-center">
+                <img src="assets/img/skills/graphql.png" alt="API & TDD" width="35" class="me‑2">  &nbsp; REST API, GraphQL, TDD
+                <i class="val ms-auto">88%</i>
+              </span>
+              <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="progress mb-3">
+              <span class="skill d-flex align-items-center">
+                <img src="assets/img/skills/postman.png" alt="Postman" width="35" class="me‑2">  &nbsp; Postman & Swagger
+                <i class="val ms-auto">95%</i>
+              </span>
+              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <!-- <p>Every project reflects my passion for technology and innovation.</p> -->
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <!--Education Section Start-->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <img src="assets/img/university/metropolia-logo.png" alt="Metropolia Logo" width="150" ><br><br>
+              <h4 class="mb-3">M.Sc. in Information Technology, <br>Networking Services</h4>
+              <h6><a href="assets/img/university/MSC_Certificate_Metropolia_Khan_Ashraf_Hossain.pdf" target="_blank" rel="noopener noreferrer">Certificate Link</a></h6>
+              <h5>2024 - 2025</h5>
+              <p><em>Metropolia University of Applied Sciences, Helsinki, Finland</em></p>
+              <ul>
+                  <li>Computer Networks and Cloud-based Service Architecture</li>
+                  <li>Development and Deployment of Internet of Things (IoT) Solutions</li>
+                  <li>Data Analysis, Visualization, and Modeling using Python</li>
+                  <li>Core Python Programming for AI and Automation</li>
+                  <li>Applied Artificial Intelligence with Python Frameworks</li>
+                  <li>Cloud Computing with Microsoft Azure</li>
+                  <li>Front-End Scripting with JavaScript and DOM Manipulation</li>
+                  <li>Academic Research Methodologies and Technical Writing</li>
+              </ul>
+              <h4 class="mb-3">Master’s Thesis</h4>
+              <p><a href="https://www.theseus.fi/handle/10024/890025" target="_blank" rel="noopener noreferrer">IoT and AI-Enabled Smart Pavement for Energy Harvesting and Autonomous De-Icing in Smart Cities</a></p>
+              <h4 class="mb-3">Master’s Thesis Focus</h4>
+                <ul class="list-group mb-4">
+                  <li >Smart City Infrastructure Innovation</li>
+                  <li >Energy Harvesting from Pavement using IoT Sensors</li>
+                  <li >AI-Based Autonomous De-Icing Mechanism for Winter Safety</li>
+                  <li >Sustainable Urban Solutions using Embedded Systems and AI</li>
+                </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <img src="assets/img/university/ju-logo.png" alt="Jahangirnagar University Logo" width="100"><br>
+              <h4 class="mb-3">M.Sc. in Applied Statistics and Data Science</h4>
+              <h6><a href="assets/img/university/MSC_Certificate_JU_Khan_Ashraf_Hossain.pdf" target="_blank" rel="noopener noreferrer">Certificate Link</a></h6>
+              <h5>2020 – 2021</h5>
+              <p><em>Jahangirnagar University, Dhaka, Bangladesh</em></p>
+              <ul>
+                  <li>Applied Statistical Analysis and Modeling</li>
+                  <li>Big Data Analytics and Predictive Modeling</li>
+                  <li>Data-Driven Decision Making</li>
+                  <li>Data Science with Python and MongoDB</li>
+                  <li>Artificial Intelligence and Machine Learning</li>
+                  <li>Decision Analysis and Business Intelligence</li>
+                  <li>Software Development Life Cycle (SDLC)</li>
+              </ul>
+              <h4 class="mb-3">Master’s Thesis</h4>
+              <p>
+                Analysis on Sales of Electronic Products of an International Gadget Store
+              </p>
+              <h4 class="mb-3">Master’s Thesis Focus:</h4>
+              <ul>
+                <li>Exploratory Data Analysis (EDA) of Sales Patterns</li>
+                <li>Trend Identification and Seasonality Detection in Sales Data</li>
+                <li>Correlation Between Product Categories and Revenue</li>
+                <li>Customer Behavior and Purchase Frequency Analysis</li>
+                <li>Data Visualization for Business Intelligence</li>
+                <li>Predictive Modeling for Future Sales Forecasting</li>
+                <li>Decision Support using Statistical and Machine Learning Techniques</li>
+              </ul>
+              <h4 class="mb-3">Activities and Contributions</h4>
+              <ul>
+                <li>Class Representative, Faculty Coordination Committee</li>
+                <li>Actively contributed to teacher-student communication and academic planning</li>
+              </ul>
+              
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <img src="assets/img/university/daffodil-logo.jpg" alt="Daffodil International University Logo" width="150">
+              <h4>B.Sc. in Computer Science and Engineering</h4>
+              <h6><a href="assets/img/university/BSC_Certificate_Khan_Ashraf_Hossain.pdf" target="_blank" rel="noopener noreferrer">Certificate Link</a></h6>
+              <h5>2020 – 2021</h5>
+              <h5>2013 - 2016</h5>
+              <p><em>Daffodil International University (DIU), Dhaka, Bangladesh</em></p>
+              <ul>
+                <li>Software Development Life Cycle (SDLC)</li>
+                <li>Web Development using PHP and PHP Frameworks</li>
+                <li>Object-Oriented Programming and Application Design</li>
+                <li>Introduction to Internet of Things (IoT)</li>
+                <li>Database Management and Backend Integration</li>
+                <li>Version Control and Collaborative Development using GitHub</li>
+              </ul>
+              <h4 class="mb-3">Activities and Contributions</h4>
+              <ul>
+                <li>Member, Computer Programming Club</li>
+                <li>Organizer, University IT Seminars and Tech Events</li>
+                <li>Class Representative and Communication Bridge between Faculty and Students</li>
+                <li>Volunteer, Blood Donation Programs and Campus Social Events</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+          </div>
+
+
+          <!--Education Section End-->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <img src="assets/img/office/ebl.jpg" alt="EBL Logo" width="100">
+              <h4>Principal Officer - ICT Division</h4>
+              <h5>[ 24/06/2024 – 30/11/2024 ]</h5>
+              <p><em>Eastern Bank PLC. – Bangladesh </em></p>
+              <ul>
+                <li>Deployed a highly available Utility Bill Payment System, integrating banking services with utility providers and processing over 5 million transactions monthly.</li>
+                <li>Implemented and managed secure e-payment gateways for 20,000+ organizations using OAuth 2.0, SAML, and JWT for nationwide adoption.</li>
+                <li>Optimized MySQL/Oracle performance through advanced indexing, query tuning, and partitioning, achieving 3× throughput with sub-second query times.</li>
+                <li>Integrated Elasticsearch & Logstash for centralized logging and real-time analytics, reducing incident resolution time by 70%.</li>
+                <li>Utilized Kafka & RabbitMQ for distributed event processing, increasing system throughput for real-time notifications.</li>
+                <li>Designed high-performance RESTful APIs for financial services using PHP, Python, and Java.</li>
+                <li>Led Agile and Kanban-driven teams, delivering end-to-end projects from design through deployment.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <img src="assets/img/office/ssl.jpg" alt="SSL Logo" width="100">
+              <h4>Senior Software Specialist (Associate Manager)</h4>
+              <h5>[ 01/03/2023 – 20/06/2024 ]</h5>
+              <p><em>SSL Wireless – Bangladesh</em></p>
+              <ul>
+                <li>Managed VAS integration for 5 telecom operators and 50+ banks, utilizing SMS, Top-up, IVR, and Voice SMS to enhance customer engagement.</li>
+                <li>Led ERP & RPA implementations for 3 garments industries, automating processes and improving operational efficiency with custom software solutions.</li>
+                <li>Developed payment solutions for 90+ financial institutions, integrating SSLCommerz to support 95% of Bangladesh’s e-commerce transactions.</li>
+                <li>Oversaw content and digital marketing strategies for 2,100+ enterprises, enhancing online top-up performance and customer engagement.</li>
+                <li>Designed scalable activation campaigns for SMEs and corporates using multi-channel communication technologies (SMS, IVR, web).</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Software Specialist </h4>
+              <h5>[ 01/10/2020 – 28/02/2023 ] </h5>
+              <p><em>SSL Wireless – Bangladesh</em></p>
+              <ul>
+                <li>Developed software applications based on precise project requirements, exceeding client expectations using PHP, Python, JavaScript, React, and Vue.js to ensure high-performance and scalable solutions.</li>
+                <li>Worked on payment gateway integration (SSLCOMMERZ), implementing secure and seamless e-commerce transaction flows with multi-method payment support.</li>
+                <li>Developed and maintained RESTful APIs for the Mobile Charging Gateway, enabling a multi-operator Mobile Recharge System (easy.com.bd).</li>
+                <li>Integrated Google Dialogflow to deploy HRIS chatbots, automating HR queries using Dialogflow Console and Google Cloud Platform (GCP).</li>
+                <li>Implemented SMS Push-Pull and IVR services, enabling automated customer engagement and service updates via SMS and voice channels.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Software Associate </h4>
+              <h5>[ 01/12/2017 – 30/09/2020 ] </h5>
+              <p><em>SSL Wireless – Bangladesh</em></p>
+              <ul>
+                <li>Improved 50+ WAP sites and revenue report panels for clients using PHP, JavaScript, and MySQL, optimizing both mobile and web data flow for performance and usability.</li>
+                <li>Collaborated with development and QA teams to design scalable, high-performance solutions tailored to client requirements.</li>
+                <li>Modified and maintained existing software systems to correct coding errors, upgrade interfaces, and enhance overall application performance.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <img src="assets/img/office/xorgeek.jpg" alt="XORGeek Logo" width="100">
+              <h4>Jr. Software Engineer </h4>
+              <h5>[ 01/09/2017 – 30/11/2017 ]</h5>
+              <p><em>Xorgeek – Bangladesh  </em></p>
+              <ul>
+                <li>Collaborated with a Japanese team on 10+ responsive, high-UX web projects, ensuring quality and user satisfaction.</li>
+                <li>Conducted thorough testing and review of website designs for responsiveness, clarity, and effectiveness.</li>
+                <li>Assisted in web presence planning, implementation, modification, and integration of requested elements to streamline business operations.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    
+    <!-- /Portfolio Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+      </div>
+      <!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+            <div>
+              <h4 class="title"><a href="" class="stretched-link">Software Development</a></h4>
+              <p class="description">
+                <ul>
+                  <li>Full-Stack Web Application Development</li>
+                  <li>Custom PHP, Laravel & Python Applications</li>
+                  <li>API Design & Integration (REST, GraphQL)</li>
+                  <li>Scalable Microservices Architecture</li>
+                  <li>SaaS Product Development</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+            <div>
+              <h4 class="title"><a href="" class="stretched-link">Cloud Engineering & DevOps</a></h4>
+              <p class="description">
+                <ul>
+                  <li>Cloud Infrastructure Setup (AWS: EC2, S3, Lambda, CloudFront, RDS, etc.)</li>
+                  <li>CI/CD Pipeline Setup with GitHub Actions, Bitbucket Pipelines</li>
+                  <li>Docker Containerization & Kubernetes Orchestration</li>
+                  <li>Load Balancing, Auto Scaling & Serverless Deployment</li>
+                  <li>Monitoring & Logging (CloudWatch, ELK Stack)</li>
+                </ul>
+              </p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+            <div>
+              <h4 class="title"><a href="" class="stretched-link">Data Engineering & Analytics</a></h4>
+              <p class="description">
+                <ul>
+                  <li>Data Pipeline Design & Implementation</li>
+                  <li>ETL Processes with Python, Pandas, Apache Kafka</li>
+                  <li>Big Data Handling (MongoDB, Redis, Elasticsearch)</li>
+                  <li>Dashboarding & Data Visualization</li>
+                  <li>Predictive Analytics & Machine Learning Prototyping</li>
+                </ul>
+              </p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
+            <div>
+              <h4 class="title"><a href="" class="stretched-link">API & System Integration</a></h4>
+              <p class="description">
+                <ul>
+                  <li>RESTful API Development & Documentation (Swagger, Postman)</li>
+                  <li>Third-party API Integration (Payment Gateways, SMS, Email Services)</li>
+                  <li>Secured API Gateway Setup</li>
+                  <li>Token-based Authentication & API Key Management</li>
+                </ul>
+              </p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
+            <div>
+              <h4 class="title"><a href="" class="stretched-link">AI & IoT Solutions</a></h4>
+              <p class="description">
+                <ul>
+                  <li>AI Model Deployment using Flask/FastAPI</li>
+                  <li>Smart IoT System Prototyping (Sensor Integration, Data Collection)</li>
+                  <li>Real-time Data Analysis for Smart Cities</li>
+                  <li>AI-enabled Automation for Industrial IoT</li>
+                </ul>
+              </p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
+            <div>
+              <h4 class="title"><a href="" class="stretched-link">Technical Consulting & Project Support</a></h4>
+              <p class="description">
+                <ul>
+                  <li>Technical Architecture Design</li>
+                  <li>Cloud Cost Optimization</li>
+                  <li>Code Review & Refactoring</li>
+                  <li>Agile Project Management (Scrum, Jira)</li>
+                  <li>Technical Documentation & Team Mentoring</li>
+                </ul>
+              </p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /Services Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>I confidently recommend Ashraf Hossain Khan. His extensive knowledge, strategic thinking, and leadership qualities significantly contribute to the success of any software development project. Ashraf's ability to mentor team members and drive innovation make him an invaluable asset to any organization seeking excellence in software development and project lead.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/khaled.jpg" class="testimonial-img" alt="">
+                <h3>Khaled Akand</h3>
+                <h4>Deputy General Manager – Wintel Limited</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>I wholeheartedly endorse Ashraf Hossain Khan as an exceptional software programmer and tech lead. Over the last 2 years, I've had the privilege of closely collaborating with him on an AI-based ERP project, where I hold the role of Senior Business Analyst.
+                    Ashraf's proficiency in grasping requirements is truly remarkable. His ability to comprehend intricate project intricacies and translate them into actionable solutions is quite impressive. His dedication to delivering flawless products underscores his commitment to excellence. 
+                    Apart from his technical prowess, Ashraf's unwavering commitment to his work is truly commendable. He consistently goes above and beyond to ensure the project's success and contributes positively to the team's dynamics. His respectful and professional approach makes collaborating with him a delight.
+                    Ashraf's contributions have been instrumental in the success of our AI-based ERP project. I am confident that his skills, dedication, and work ethic will consistently yield outstanding outcomes in any endeavor he takes on. With utmost confidence, I wholeheartedly recommend Ashraf Hossain Khan to any team or project.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/redwan.jpg" class="testimonial-img" alt="">
+                <h3>Redwan Ahamed</h3>
+                <h4>Business Analysis Manager - SSLWireless</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>I had the privilege of working alongside Ashraf Hossain Khan at SSL Wireless. He is an outstanding software engineer who brings not only technical expertise but also exceptional leadership skills to the table.
+                    Ashraf Hossain Khan has a unique approach to software development. While many software engineers primarily focus on writing code, he stands out by excelling in supervision and team management. He has an incredible ability to guide and motivate the software development team, ensuring that everyone is aligned with the project goals and delivering their best work.
+                    What truly sets Ashraf Hossain Khan apart is his methodical problem-solving approach. He has a knack for zooming in on specific points and tackling them one by one. This meticulous attention to detail has consistently led to efficient and effective solutions. He doesn't just see the bigger picture; he knows how to break it down into manageable tasks and make steady progress.
+                    Ashraf Hossain Khan is not only an exceptional software engineer but also a fantastic mentor and leader. His dedication to our team's success and his ability to guide us through complex projects like OTL-ERP, Central Monitoring Panel(CMP), Virtual Recharge(VR) were instrumental in our achievements at SSL Wireless.
+                    I highly recommend Ashraf Hossain Khan to any organization looking for a dedicated software engineer who excels in team leadership and problem-solving. He is an asset to any team fortunate enough to have him on board.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/saifur.jpg" class="testimonial-img" alt="">
+                <h3>Saifur Rahman</h3>
+                <h4>Senior Full Stack Engineer – Wintel Limited</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-1">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Vaskivuorentie 22, A 11, 01600, Vantaa, Finland</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Me</h3>
+                  <p>+358 413641031</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>engr.ashrafkhan01@gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1988.7820260194858!2d24.8439274!3d60.2632297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468df70762de5d43%3A0xf09b7230ce311828!2sVaskivuorentie%2022%2C%2001600%20Vantaa!5e0!3m2!1sen!2sfi!4v1693051384074!5m2!1sen!2sfi" 
+                width="100%" 
+                height="270" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+          
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required>
+                </div>
+          
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required>
+                </div>
+          
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required>
+                </div>
+          
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required></textarea>
+                </div>
+          
+                <div class="col-md-12 text-center">
+                  <div class="loading" style="display:none;">Loading</div>
+                  <div class="error-message text-danger"></div>
+                  <div class="sent-message text-success" style="display:none;">Your message has been sent. Thank you!</div>
+                  <button type="submit">Send Message</button>
+                </div>
+          
+              </div>
+            </form>
+          </div>          
+          <!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Ashraf Khan</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="">AK</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
